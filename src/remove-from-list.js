@@ -25,13 +25,6 @@ function removeKFromList(l, k) {
   const removedNext = removeKFromList(l.next, k);
   l.value == k ? (l = removedNext) : (l.next = removedNext);
   return l;
-  // if (l.value == k) {
-  //   l = removeKFromList(l.next, k);
-  //   return l;
-  // } else {
-  //   l.next = removeKFromList(l.next, k);
-  //   return l;
-  // }
 }
 
 module.exports = {
